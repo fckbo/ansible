@@ -1,5 +1,5 @@
 - hosts: all
-  name: fb-poc
+  name: fbplay
   tasks:
     - name: Create dummy directory 1
       file:
