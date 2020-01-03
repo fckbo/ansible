@@ -1,4 +1,4 @@
-- hosts: {{target}}
+- hosts: "{{ target }}"
   name: fbplay
   vars:
     int_step: 1
