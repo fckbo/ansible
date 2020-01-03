@@ -7,7 +7,6 @@
       file:
         path: "{{directory_name_1}}"
         state: directory
-        int_step: "{{ int_step + 1 }}"
     - name: Increment step
       debug:
         msg: " Starting step {{ int_step + 1 }}"
