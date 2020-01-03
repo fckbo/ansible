@@ -1,17 +1,10 @@
 - hosts: "{{ target }}"
   name: fbplay
-  vars:
-    int_step: 1
   tasks:
     - name: Create dummy directory 1
       file:
         path: "{{directory_name_1}}"
         state: directory
-    - name: Increment step
-      vars: 
-        int_step: "{{ int_step + 1 }}"
-      debug:
-        msg: " Starting step {{ int_step }}"
     - name: Create dummy directory 2
       file:
         path: "{{directory_name_2}}"
