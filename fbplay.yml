@@ -7,15 +7,15 @@
       file:
         path: "{{directory_name_1}}"
         state: directory
-        int_step: {{ int_step + 1 }}
+        int_step: "{{ int_step + 1 }}"
     - name: Create dummy directory 2
       file:
         path: "{{directory_name_2}}"
         state: directory
-        int_step: {{ int_step + 1 }}
+        int_step: "{{ int_step + 1 }}"
     - name: Create dummy file in directory
       file:
         path: "{{directory_name_1}}/{{file_name}}"
         state: touch
         mode: u=rw,g=r,o=r
-        int_step: {{ int_step + 1 }}
+        int_step: "{{ int_step + 1 }}"
