@@ -3,6 +3,9 @@
   tasks:
     - name: Create dummy directory 1
       win_shell: "mkdir {{directory_name_1}}"
-  tasks:
     - name: Create dummy directory 2
       win_shell: "mkdir {{directory_name_2}}"
+    - name: Create dummy file in directory
+      win_file:
+        path: "{{directory_name_1}}\{{file_1}}
+        state: touch
