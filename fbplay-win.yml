@@ -7,5 +7,5 @@
       win_shell: "mkdir {{directory_name_2}}"
     - name: Create dummy file in directory
       win_file:
-        path: "{{directory_name_1}}\{{file_name}}"
+        path: "{{directory_name_1}}/{{file_name}}"
         state: touch
